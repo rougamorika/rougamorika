@@ -1,0 +1,46 @@
+name: Update contribution dashboard
+
+on:
+  schedule:
+    # 03:17 UTC = 11:17 Asia/Shanghai, every day
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-dashboard
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch public GitHub data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/fetch_data.py --user rougamorika
+
+      - name: Regenerate dashboard SVG
+        run: python scripts/gen_dashboard.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/dashboard.svg data/stats.json data/profile.json
+          if git diff --cached --quiet; then
+            echo "dashboard already up to date"
+          else
+            git commit -m "chore: refresh contribution dashboard [skip ci]"
+            git push
+          fi

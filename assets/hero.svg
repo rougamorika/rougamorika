@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260">
+  <defs>
+    <style>
+      .hero-flow{animation:hero-flow 18s linear infinite}
+      .hero-breathe{animation:hero-breathe 8s ease-in-out infinite}
+      @keyframes hero-flow{from{stroke-dashoffset:0}to{stroke-dashoffset:-64}}
+      @keyframes hero-breathe{0%,100%{opacity:.7}50%{opacity:1}}
+      @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+    </style>
+    <pattern id="hero-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M.5 0V40M0 .5H40" fill="none" stroke="#7C8B9C" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="hero-glow">
+      <stop offset="0" stop-color="#39D353" stop-opacity=".16"/>
+      <stop offset=".55" stop-color="#39D353" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#39D353" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hero-name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E6EDF3"/>
+      <stop offset=".44" stop-color="#E6EDF3"/>
+      <stop offset="1" stop-color="#7EE787"/>
+    </linearGradient>
+    <linearGradient id="hero-flow-line" gradientUnits="userSpaceOnUse" x1="600" y1="0" x2="968" y2="0">
+      <stop offset="0" stop-color="#39D353" stop-opacity="0"/>
+      <stop offset=".16" stop-color="#39D353" stop-opacity=".28"/>
+      <stop offset=".55" stop-color="#39D353" stop-opacity=".62"/>
+      <stop offset=".86" stop-color="#39D353" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#39D353" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hero-bars" gradientUnits="userSpaceOnUse" x1="620" y1="0" x2="940" y2="0">
+      <stop offset="0" stop-color="#39D353" stop-opacity=".55"/>
+      <stop offset=".55" stop-color="#39D353" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#39D353" stop-opacity=".2"/>
+    </linearGradient>
+    <linearGradient id="hero-rule" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
+      <stop offset="0" stop-color="#1B2634" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#1B2634"/>
+      <stop offset="1" stop-color="#1B2634" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="260" fill="#0A0F16"/>
+  <rect width="1000" height="260" fill="url(#hero-grid)"/>
+  <ellipse class="hero-breathe" cx="230" cy="118" rx="320" ry="140" fill="url(#hero-glow)"/>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M600 120.5H968M616 200.5H936" stroke="#1B2634" stroke-opacity=".9" stroke-width="1"/>
+    <circle cx="770" cy="120" r="70" stroke="#56D4DD" stroke-opacity=".34" stroke-dasharray="1 6"/>
+    <path d="M624 200.5V188.5M640 200.5V178.5M656 200.5V184.5M672 200.5V168.5M688 200.5V186.5M704 200.5V174.5M720 200.5V182.5M736 200.5V166.5M752 200.5V189.5M768 200.5V178.5M784 200.5V172.5M800 200.5V184.5M816 200.5V176.5M832 200.5V182.5M848 200.5V170.5M864 200.5V188.5M880 200.5V178.5M896 200.5V182.5M912 200.5V172.5M928 200.5V180.5" stroke="url(#hero-bars)" stroke-width="2"/>
+    <path d="M600 120C609.761 90.667 636.239 90.667 646 120C655.761 149.333 682.239 149.333 692 120C701.761 90.667 728.239 90.667 738 120C747.761 149.333 774.239 149.333 784 120C793.761 90.667 820.239 90.667 830 120C839.761 149.333 866.239 149.333 876 120C885.761 90.667 912.239 90.667 922 120C931.761 149.333 958.239 149.333 968 120" stroke="#39D353" stroke-opacity=".1" stroke-width="5"/>
+    <path class="hero-flow" d="M600 120C609.761 90.667 636.239 90.667 646 120C655.761 149.333 682.239 149.333 692 120C701.761 90.667 728.239 90.667 738 120C747.761 149.333 774.239 149.333 784 120C793.761 90.667 820.239 90.667 830 120C839.761 149.333 866.239 149.333 876 120C885.761 90.667 912.239 90.667 922 120C931.761 149.333 958.239 149.333 968 120" stroke="url(#hero-flow-line)" stroke-width="1.6" stroke-dasharray="7 9"/>
+    <g stroke="#39D353" stroke-opacity=".7" stroke-width="1.6">
+      <path d="M924 65.5Q930.74 53.31 924 42"/>
+      <path d="M927.9 72.25Q935.08 84.18 948.25 84"/>
+      <path d="M920.1 72.25Q906.17 72.51 899.75 84"/>
+    </g>
+    <circle cx="924" cy="70" r="3.4" stroke="#56D4DD" stroke-opacity=".55" stroke-width="1"/>
+  </g>
+
+  <g fill="#39D353" fill-opacity=".7">
+    <circle cx="623" cy="98" r="2"/>
+    <circle cx="715" cy="98" r="2"/>
+    <circle cx="807" cy="98" r="2"/>
+  </g>
+  <circle cx="924" cy="70" r="1.2" fill="#56D4DD" fill-opacity=".7"/>
+
+  <rect x="0" y="238" width="1000" height="1" fill="url(#hero-rule)"/>
+
+  <g font-family="Inter,'Segoe UI','Helvetica Neue',Arial,'Noto Sans',sans-serif">
+    <text x="32" y="56" font-size="11.5" font-weight="500" letter-spacing="3" fill="#7C8B9C">SHANGHAI UNIVERSITY OF ELECTRIC POWER &#183; 2023 &#8211; 2027</text>
+    <text x="32" y="140" font-size="76" font-weight="800" letter-spacing="1.5" fill="url(#hero-name)">ROUGAMO</text>
+    <text x="32" y="176" font-size="19" letter-spacing=".4" fill="#A9B7C6">Fernandez Rougamo Zhou</text>
+    <text x="32" y="214" font-size="11.5" font-weight="500" letter-spacing="2.2" fill="#39D353" fill-opacity=".8">SIGNAL PROCESSING &#183; ROBOTICS &#183; WIND ENERGY &#183; MACHINE LEARNING</text>
+  </g>
+</svg>
