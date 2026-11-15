@@ -29,7 +29,7 @@
 <text x="60" y="33" font-size="17" fill="#E6EDF3" font-weight="600" letter-spacing="2.2" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">CONTRIBUTION DASHBOARD</text>
 <text x="60" y="50" font-size="10.5" fill="#7C8B9C" letter-spacing="1.4" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">PUBLIC GITHUB ACTIVITY · ALL YEARS</text>
 <text x="976" y="33" font-size="15" fill="#39D353" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', ui-monospace, Menlo, Consolas, monospace">@rougamorika</text>
-<text x="976" y="50" font-size="10.5" fill="#4E5D6D" text-anchor="end" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">updated 2026-11-14 · Asia/Shanghai</text>
+<text x="976" y="50" font-size="10.5" fill="#4E5D6D" text-anchor="end" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">updated 2026-11-15 · Asia/Shanghai</text>
 <line x1="24" y1="72" x2="976" y2="72" stroke="#1B2634" stroke-width="1"/>
 </g>
 <g id="dash-tiles">
@@ -42,7 +42,7 @@
 <rect x="198.333" y="102" width="18" height="2.4" rx="1.2" fill="#2EA043" opacity=".8"/>
 <text x="198.333" y="126" font-size="10.2" fill="#7C8B9C" letter-spacing="0.8" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">ACTIVE DAYS</text>
 <text x="198.333" y="152" font-size="27" fill="#E6EDF3" font-weight="700" font-family="'JetBrains Mono', 'SFMono-Regular', ui-monospace, Menlo, Consolas, monospace">70</text>
-<text x="198.333" y="166" font-size="9.8" fill="#4E5D6D" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">6.4% of account days</text>
+<text x="198.333" y="166" font-size="9.8" fill="#4E5D6D" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">6.3% of account days</text>
 <rect x="344.667" y="88" width="150.333" height="76" rx="12" fill="#111B26" stroke="#1B2634"/>
 <rect x="358.667" y="102" width="18" height="2.4" rx="1.2" fill="#2EA043" opacity=".8"/>
 <text x="358.667" y="126" font-size="10.2" fill="#7C8B9C" letter-spacing="0.8" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">LONGEST STREAK</text>
@@ -235,5 +235,5 @@
 <circle cx="815.69" cy="642.00" r="2.6" fill="#39D353"/>
 <text x="824.692" y="645.6" font-size="10.2" fill="#A9B7C6" letter-spacing="0.7" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">SINCE 2023</text>
 </g>
-<g id="dash-footer"><text x="24" y="666" font-size="9.3" fill="#4E5D6D" letter-spacing="1" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">PUBLIC GITHUB DATA · GENERATED WITH PYTHON</text><text x="976" y="666" font-size="9.3" fill="#4E5D6D" text-anchor="end" letter-spacing="1" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">@rougamorika · UPDATED 2026-11-14</text></g>
+<g id="dash-footer"><text x="24" y="666" font-size="9.3" fill="#4E5D6D" letter-spacing="1" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">PUBLIC GITHUB DATA · GENERATED WITH PYTHON</text><text x="976" y="666" font-size="9.3" fill="#4E5D6D" text-anchor="end" letter-spacing="1" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif">@rougamorika · UPDATED 2026-11-15</text></g>
 </svg>
